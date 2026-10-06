@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tusar | Security Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="grid"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <span class="terminal-symbol">&gt;_</span>
+            TUSAR<span class="dim">.LAB</span>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="terminal-line">
+                <span class="green">root@tusar</span>:<span class="blue">~</span>$
+                <span id="typing"></span><span class="cursor">█</span>
+            </div>
+
+            <h1>
+                SECURITY<br>
+                <span>LAB</span>
+            </h1>
+
+            <p class="subtitle">
+                Cybersecurity student building tools, breaking things,
+                and learning how to secure them.
+            </p>
+
+            <button id="enterLab">
+                ENTER THE LAB
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <!-- System information -->
+        <section class="system-panel">
+
+            <div class="panel-header">
+                <span>SYSTEM STATUS</span>
+                <span class="live">● LIVE</span>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span class="label">LAB STATUS</span>
+                    <strong>ACTIVE</strong>
+                </div>
+
+                <div class="stat">
+                    <span class="label">PROJECTS</span>
+                    <strong>03</strong>
+                </div>
+
+                <div class="stat">
+                    <span class="label">TOOLS</span>
+                    <strong>06</strong>
+                </div>
+
+                <div class="stat">
+                    <span class="label">CTF's</span>
+                    <strong>01</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- =========================
+     INTERACTIVE TERMINAL
+========================= -->
+
+<section class="terminal-section">
+
+    <div class="section-title">
+        <span>// COMMAND INTERFACE</span>
+        <h2>TERMINAL</h2>
+    </div>
+
+
+    <div class="terminal">
+
+        <div class="terminal-header">
+
+            <div class="terminal-title">
+                <span class="terminal-status"></span>
+                tusar@SECURITY-LAB
+            </div>
+
+            <div class="terminal-controls">
+                <span>−</span>
+                <span>□</span>
+                <span>×</span>
+            </div>
+
+        </div>
+
+
+        <div id="terminalOutput" class="terminal-output">
+
+            <div>
+                TUSAR SECURITY LAB [VERSION 1.0]
+            </div>
+
+            <div class="terminal-muted">
+                Secure command interface initialized.
+            </div>
+
+            <br>
+
+            <div>
+                Type <span class="terminal-command">help</span>
+                to see available commands.
+            </div>
+
+        </div>
+
+
+        <div class="terminal-input-line">
+
+            <span class="terminal-prompt">
+                root@tusar:~$
+            </span>
+
+            <input
+                type="text"
+                id="terminalInput"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="type a command..."
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+        <!-- Lab modules -->
+        <section id="lab" class="lab-section">
+
+            <div class="section-title">
+                <span>// SECURITY MODULES</span>
+                <h2>THE LAB</h2>
+            </div>
+
+
+            <div class="modules">
+
+                <div class="module" data-page="projects">
+                    <div class="module-number">01</div>
+                    <div class="module-icon">⌬</div>
+
+                    <h3>PROJECTS</h3>
+
+                    <p>
+                        Security tools, experiments and
+                        development projects.
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+
+                <div class="module" data-page="skills">
+                    <div class="module-number">02</div>
+                    <div class="module-icon">◈</div>
+
+                    <h3>SKILLS</h3>
+
+                    <p>
+                        Technologies, security concepts
+                        and tools I'm learning.
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+
+                <div class="module" data-page="tools">
+                    <div class="module-number">03</div>
+                    <div class="module-icon">⚙</div>
+
+                    <h3>TOOLKIT</h3>
+
+                    <p>
+                        Security tools and technologies
+                        used in my lab.
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+
+                <div class="module" data-page="ctf">
+                    <div class="module-number">04</div>
+                    <div class="module-icon">◇</div>
+
+                    <h3>CTF</h3>
+
+                    <p>
+                        Challenges, writeups and
+                        cybersecurity learning.
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+
+                <div class="module" data-page="about">
+                    <div class="module-number">05</div>
+                    <div class="module-icon">◉</div>
+
+                    <h3>ABOUT</h3>
+
+                    <p>
+                        Who I am and what I'm currently
+                        working towards.
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+
+                <div class="module" data-page="contact">
+                    <div class="module-number">06</div>
+                    <div class="module-icon">↗</div>
+
+                    <h3>CONTACT</h3>
+
+                    <p>
+                        Want to collaborate or discuss
+                        a project?
+                    </p>
+
+                    <span class="open">OPEN MODULE →</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODULE WINDOW -->
+
+<div id="moduleWindow" class="module-window">
+
+    <div class="window-header">
+
+        <div>
+            <span class="window-dot"></span>
+            <span id="windowTitle">SECURITY MODULE</span>
+        </div>
+
+        <button id="closeModule">×</button>
+
+    </div>
+
+
+    <div class="window-content">
+
+<!-- PROJECTS -->
+
+<div class="module-content" id="projectsContent">
+
+    <div class="content-label">// LAB PROJECTS</div>
+
+    <h2>SECURITY PROJECTS</h2>
+
+    <p class="content-description">
+        Practical cybersecurity tools, experiments and
+        development projects built inside my security lab.
+    </p>
+
+    <div class="project-list">
+
+        <!-- LAB 001 -->
+
+        <div class="project-card">
+
+            <div class="project-top">
+                <span>LAB-001</span>
+                <span class="completed">● COMPLETED</span>
+            </div>
+
+            <h3>SECURITY HEADER SCANNER</h3>
+
+            <p>
+                A Python-based tool that analyzes HTTP security
+                headers and identifies missing security protections.
+            </p>
+
+            <div class="tags">
+                <span>PYTHON</span>
+                <span>HTTP</span>
+                <span>WEB SECURITY</span>
+            </div>
+
+            <button class="project-button" id="openScanner">
+                OPEN LAB →
+            </button>
+
+        </div>
+
+<!-- LAB 002 -->
+
+<div class="project-card">
+
+    <div class="project-top">
+        <span>LAB-002</span>
+        <span class="completed">● COMPLETED</span>
+    </div>
+
+    <h3>TCP PORT & SERVICE SCANNER</h3>
+
+    <p>
+        A multithreaded Python TCP scanner that identifies
+        open ports, detects services, collects HTTP response
+        information and generates scan reports.
+    </p>
+
+    <div class="tags">
+        <span>PYTHON</span>
+        <span>SOCKET</span>
+        <span>THREADING</span>
+        <span>NETWORK SECURITY</span>
+    </div>
+
+    <button class="project-button" id="openPortScanner">
+        OPEN LAB →
+    </button>
+
+        </div>
+ 
+       <!-- LAB 003 -->
+
+<div class="project-card">
+
+    <div class="project-top">
+        <span>LAB-003</span>
+        <span class="completed">● COMPLETED</span>
+    </div>
+
+    <h3>WEB VULNERABILITY SCANNER</h3>
+
+    <p>
+        A passive Python-based web security scanner that
+        analyzes HTTP security headers, methods, cookies,
+        HTTPS/TLS configuration and generates security reports.
+    </p>
+
+    <div class="tags">
+        <span>PYTHON</span>
+        <span>REQUESTS</span>
+        <span>HTTP</span>
+        <span>WEB SECURITY</span>
+    </div>
+
+    <button class="project-button" id="openWebScanner">
+        OPEN LAB →
+    </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- SECURITY HEADER SCANNER -->
+
+<div class="module-content" id="scannerContent">
+
+    <div class="content-label">// LAB-001 / WEB SECURITY</div>
+
+    <div class="lab-title-row">
+
+        <div>
+            <h2>SECURITY HEADER SCANNER</h2>
+
+            <p class="lab-subtitle">
+                HTTP security configuration analyzer
+            </p>
+        </div>
+
+        <div class="lab-id">
+            LAB-001
+        </div>
+
+    </div>
+
+
+
+    <!-- PROJECT STATUS -->
+
+    <div class="scanner-meta">
+
+        <div>
+            <span>STATUS</span>
+            <strong class="text-green">COMPLETED</strong>
+        </div>
+
+        <div>
+            <span>LANGUAGE</span>
+            <strong>PYTHON</strong>
+        </div>
+
+        <div>
+            <span>CATEGORY</span>
+            <strong>WEB SECURITY</strong>
+        </div>
+
+        <div>
+            <span>TYPE</span>
+            <strong>CLI TOOL</strong>
+        </div>
+
+    </div>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // PROJECT OVERVIEW
+        </div>
+
+        <p>
+            Security Header Scanner is a Python-based security
+            analysis tool designed to inspect HTTP response headers
+            and identify missing security-related configurations.
+        </p>
+
+    </section>
+
+
+    <!-- OBJECTIVE -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // OBJECTIVE
+        </div>
+
+        <div class="objective-grid">
+
+            <div>
+                <span>01</span>
+
+                <p>
+                    Request an HTTP response from a target.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+
+                <p>
+                    Inspect the returned security headers.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+
+                <p>
+                    Identify missing security protections.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+
+                <p>
+                    Present findings in a readable report.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // TECHNOLOGY STACK
+        </div>
+
+        <div class="tech-stack">
+
+            <span>PYTHON</span>
+            <span>REQUESTS</span>
+            <span>HTTP</span>
+            <span>CLI</span>
+            <span>WEB SECURITY</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAMPLE ANALYSIS -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SAMPLE ANALYSIS
+        </div>
+
+        <div class="scan-terminal">
+
+            <div>
+                <span class="terminal-muted">
+                    $ python scanner.py
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                TARGET:
+                <span class="terminal-command">
+                    example.com
+                </span>
+            </div>
+
+            <div>
+                STATUS:
+                <span class="terminal-success">
+                    200 OK
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-heading">
+                SECURITY HEADERS
+            </div>
+
+            <div>
+                Content-Security-Policy
+                <span class="terminal-error">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                X-Frame-Options
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                X-Content-Type-Options
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                Strict-Transport-Security
+                <span class="terminal-success">
+                    [ PRESENT ]
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                ANALYSIS COMPLETE.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINDINGS -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SECURITY FINDINGS
+        </div>
+
+
+        <div class="finding critical">
+
+            <div>
+
+                <strong>
+                    CONTENT-SECURITY-POLICY
+                </strong>
+
+                <p>
+                    Helps restrict which resources a browser
+                    can load and can reduce the impact of
+                    certain injection attacks.
+                </p>
+
+            </div>
+
+            <span>HIGH</span>
+
+        </div>
+
+
+        <div class="finding warning">
+
+            <div>
+
+                <strong>
+                    X-FRAME-OPTIONS
+                </strong>
+
+                <p>
+                    Helps protect pages from being embedded
+                    in frames and can reduce clickjacking risk.
+                </p>
+
+            </div>
+
+            <span>LOW</span>
+
+        </div>
+
+
+        <div class="finding warning">
+
+            <div>
+
+                <strong>
+                    X-CONTENT-TYPE-OPTIONS
+                </strong>
+
+                <p>
+                    Helps prevent browsers from MIME-sniffing
+                    responses.
+                </p>
+
+            </div>
+
+            <span>LOW</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARNING -->
+    <section class="lab-block">
+
+    <div class="block-title">
+        // KEY LEARNINGS
+    </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    Understanding HTTP response headers
+                    and their role in browser security.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    Automating repetitive security checks
+                    with Python.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    Turning technical findings into
+                    understandable security reports.
+                </p>
+            </div>
+
+        </div>
+
+        </section>
+            
+        </div>
+
+
+
+
+<!-- TCP PORT SCANNER -->
+
+<div class="module-content" id="portScannerContent">
+
+    <div class="content-label">// LAB-002 / NETWORK SECURITY</div>
+
+    <div class="lab-title-row">
+
+        <div>
+            <h2>TCP PORT & SERVICE SCANNER</h2>
+
+            <p class="lab-subtitle">
+                Multithreaded TCP port discovery and service analysis
+            </p>
+        </div>
+
+        <div class="lab-id">
+            LAB-002
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT STATUS -->
+
+    <div class="scanner-meta">
+
+        <div>
+            <span>STATUS</span>
+            <strong class="text-green">COMPLETED</strong>
+        </div>
+
+        <div>
+            <span>LANGUAGE</span>
+            <strong>PYTHON</strong>
+        </div>
+
+        <div>
+            <span>CATEGORY</span>
+            <strong>NETWORK SECURITY</strong>
+        </div>
+
+        <div>
+            <span>TYPE</span>
+            <strong>CLI TOOL</strong>
+        </div>
+
+    </div>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // PROJECT OVERVIEW
+        </div>
+
+        <p>
+            A Python-based TCP port scanner designed to identify
+            open TCP ports and determine the services running on
+            those ports. The scanner uses concurrent threads to
+            scan multiple ports efficiently and can collect
+            HTTP response information from detected services.
+        </p>
+
+    </section>
+
+
+    <!-- OBJECTIVE -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // OBJECTIVE
+        </div>
+
+        <div class="objective-grid">
+
+            <div>
+                <span>01</span>
+
+                <p>
+                    Validate the target IP address and port range.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+
+                <p>
+                    Scan TCP ports and identify open services.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+
+                <p>
+                    Retrieve HTTP response information from
+                    accessible web services.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+
+                <p>
+                    Generate a readable scan report.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // TECHNOLOGY STACK
+        </div>
+
+        <div class="tech-stack">
+
+            <span>PYTHON</span>
+            <span>SOCKET</span>
+            <span>THREADING</span>
+            <span>IPADDRESS</span>
+            <span>CLI</span>
+            <span>NETWORKING</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCAN OUTPUT -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SAMPLE SCAN
+        </div>
+
+        <div class="scan-terminal">
+
+            <div>
+                <span class="terminal-muted">
+                    $ python Tcp_port_scanner.py 127.0.0.1 7888 8000
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                TARGET IP :
+                <span class="terminal-command">
+                    127.0.0.1
+                </span>
+            </div>
+
+            <div>
+                PORT RANGE :
+                <span class="terminal-command">
+                    7888 - 8000
+                </span>
+            </div>
+
+            <div>
+                THREADS :
+                <span class="terminal-command">
+                    50
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-heading">
+                SCAN RESULTS
+            </div>
+
+            <div>
+                [OPEN]
+                <span class="terminal-success">
+                    127.0.0.1:8000
+                </span>
+            </div>
+
+            <div>
+                SERVICE:
+                <span class="terminal-command">
+                    Python HTTP Server
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-muted">
+                Server: SimpleHTTP/0.6 Python/3.13.7
+            </div>
+
+            <br>
+
+            <div>
+                OPEN PORTS FOUND :
+                <span class="terminal-success">
+                    1
+                </span>
+            </div>
+
+            <div>
+                TIME TAKEN :
+                <span class="terminal-command">
+                    1.55 seconds
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-success">
+                SCAN COMPLETE ✓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // CAPABILITIES
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    Concurrent TCP scanning using
+                    ThreadPoolExecutor.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    Automatic service identification using
+                    custom mappings and system service names.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    HTTP response and server information
+                    collection from open web services.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REPORT -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // REPORT GENERATION
+        </div>
+
+        <p>
+            After the scan completes, the tool automatically
+            creates a TXT report containing the target,
+            port range, discovered services, banners,
+            timestamps and total scan duration.
+        </p>
+
+    </section>
+
+
+    <!-- LEARNINGS -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // KEY LEARNINGS
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    Understanding TCP connections and
+                    port states.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    Using Python sockets for network
+                    communication.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    Using concurrency to improve
+                    scanning performance.
+                </p>
+            </div>
+
+        </div>
+
+       </section>
+
+<!-- GITHUB -->
+       <div class="scanner-actions">
+           <a
+               href="https://github.com/TusarKhatri/TCP_Scanner"
+               class="lab-button"
+               target="_blank"
+               rel="noopener noreferrer"
+           >
+               GITHUB REPOSITORY →
+           </a>
+
+         </div>
+    </div>
+
+<!-- WEB VULNERABILITY SCANNER -->
+
+<div class="module-content" id="webScannerContent">
+
+    <div class="content-label">// LAB-003 / WEB SECURITY</div>
+
+    <div class="lab-title-row">
+
+        <div>
+            <h2>WEB VULNERABILITY SCANNER</h2>
+
+            <p class="lab-subtitle">
+                Passive web security configuration analysis
+            </p>
+        </div>
+
+        <div class="lab-id">
+            LAB-003
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT STATUS -->
+
+    <div class="scanner-meta">
+
+        <div>
+            <span>STATUS</span>
+            <strong class="text-green">COMPLETED</strong>
+        </div>
+
+        <div>
+            <span>LANGUAGE</span>
+            <strong>PYTHON</strong>
+        </div>
+
+        <div>
+            <span>CATEGORY</span>
+            <strong>WEB SECURITY</strong>
+        </div>
+
+        <div>
+            <span>TYPE</span>
+            <strong>PASSIVE SCANNER</strong>
+        </div>
+
+    </div>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // PROJECT OVERVIEW
+        </div>
+
+        <p>
+            A modular Python-based passive web security scanner
+            designed to identify common HTTP security configuration
+            issues and analyze HTTPS/TLS settings.
+        </p>
+
+    </section>
+
+
+    <!-- OBJECTIVE -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // OBJECTIVE
+        </div>
+
+        <div class="objective-grid">
+
+            <div>
+                <span>01</span>
+
+                <p>
+                    Analyze HTTP security headers and identify
+                    missing protections.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+
+                <p>
+                    Review advertised HTTP methods and
+                    cookie security attributes.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+
+                <p>
+                    Verify HTTPS/TLS connectivity and
+                    retrieve TLS information.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+
+                <p>
+                    Generate structured security reports
+                    in TXT and JSON formats.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // TECHNOLOGY STACK
+        </div>
+
+        <div class="tech-stack">
+
+            <span>PYTHON</span>
+            <span>REQUESTS</span>
+            <span>HTTP</span>
+            <span>SOCKET</span>
+            <span>SSL</span>
+            <span>JSON</span>
+            <span>CLI</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECURITY HEADERS -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SECURITY HEADER ANALYSIS
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    Content-Security-Policy
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    X-Frame-Options
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    X-Content-Type-Options
+                </p>
+            </div>
+
+            <div>
+                <strong>04</strong>
+
+                <p>
+                    Strict-Transport-Security
+                </p>
+            </div>
+
+            <div>
+                <strong>05</strong>
+
+                <p>
+                    Referrer-Policy
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAMPLE SCAN -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SAMPLE SCAN
+        </div>
+
+        <div class="scan-terminal">
+
+            <div>
+                <span class="terminal-muted">
+                    $ python scanner.py https://example.com
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                TARGET:
+                <span class="terminal-command">
+                    https://example.com
+                </span>
+            </div>
+
+            <div>
+                STATUS:
+                <span class="terminal-success">
+                    200 OK
+                </span>
+            </div>
+
+            <div>
+                SERVER:
+                <span class="terminal-command">
+                    cloudflare
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-heading">
+                SECURITY ANALYSIS
+            </div>
+
+            <div>
+                Content-Security-Policy
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                X-Frame-Options
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                X-Content-Type-Options
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                Strict-Transport-Security
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <div>
+                Referrer-Policy
+                <span class="terminal-warning">
+                    [ MISSING ]
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                TLS:
+                <span class="terminal-success">
+                    TLSv1.3
+                </span>
+            </div>
+
+            <div>
+                CIPHER:
+                <span class="terminal-command">
+                    TLS_AES_256_GCM_SHA384
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                RISK SCORE:
+                <span class="terminal-error">
+                    10 / HIGH
+                </span>
+            </div>
+
+            <br>
+
+            <div class="terminal-success">
+                SCAN COMPLETE ✓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAPABILITIES -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // CAPABILITIES
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    HTTP security header analysis.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    OPTIONS and Allow header analysis.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    Secure, HttpOnly and SameSite cookie checks.
+                </p>
+            </div>
+
+            <div>
+                <strong>04</strong>
+
+                <p>
+                    HTTPS/TLS version and cipher detection.
+                </p>
+            </div>
+
+            <div>
+                <strong>05</strong>
+
+                <p>
+                    Project-specific risk scoring.
+                </p>
+            </div>
+
+            <div>
+                <strong>06</strong>
+
+                <p>
+                    Automatic TXT and JSON report generation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RISK SCORING -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // RISK SCORING
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>HIGH</strong>
+
+                <p>
+                    3 points
+                </p>
+            </div>
+
+            <div>
+                <strong>MEDIUM</strong>
+
+                <p>
+                    2 points
+                </p>
+            </div>
+
+            <div>
+                <strong>LOW</strong>
+
+                <p>
+                    1 point
+                </p>
+            </div>
+
+        </div>
+
+        <p class="content-description">
+            Score 0 = INFO · 1–3 = LOW · 4–7 = MEDIUM ·
+            8+ = HIGH
+        </p>
+
+        <p class="content-description">
+            The risk score is a project-specific educational
+            heuristic and is not a CVSS score or formal
+            vulnerability rating.
+        </p>
+
+    </section>
+
+
+    <!-- REPORTING -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // REPORT GENERATION
+        </div>
+
+        <p>
+            Each scan generates human-readable TXT and
+            machine-readable JSON reports containing target
+            information, findings, risk summary, HTTP methods,
+            cookie analysis and TLS results.
+        </p>
+
+    </section>
+
+
+    <!-- SECURITY APPROACH -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // SECURITY APPROACH
+        </div>
+
+        <p>
+            This scanner focuses on passive and low-impact
+            security configuration analysis. It does not
+            exploit vulnerabilities, brute-force credentials,
+            attempt authentication bypasses or send destructive
+            HTTP requests.
+        </p>
+
+    </section>
+
+
+    <!-- KEY LEARNINGS -->
+
+    <section class="lab-block">
+
+        <div class="block-title">
+            // KEY LEARNINGS
+        </div>
+
+        <div class="learning-grid">
+
+            <div>
+                <strong>01</strong>
+
+                <p>
+                    Understanding HTTP requests,
+                    responses and security headers.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+
+                <p>
+                    Analyzing cookies, HTTP methods
+                    and TLS configuration.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+
+                <p>
+                    Building modular security tools
+                    with Python.
+                </p>
+            </div>
+
+            <div>
+                <strong>04</strong>
+
+                <p>
+                    Converting technical findings into
+                    structured security reports.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GITHUB -->
+
+    <div class="scanner-actions">
+
+        <a
+            href="https://github.com/TusarKhatri/Web_Vulnerability_Scanner"
+            class="lab-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GITHUB REPOSITORY →
+        </a>
+
+    </div>
+
+</div>
+
+
+        <!-- SKILLS -->
+
+        <div class="module-content" id="skillsContent">
+
+            <div class="content-label">// KNOWLEDGE BASE</div>
+
+            <h2>SKILLS</h2>
+
+            <div class="skill-grid">
+
+                <div class="skill">
+                    <span>PYTHON</span>
+                    <div class="skill-bar">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>HTML / CSS</span>
+                    <div class="skill-bar">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JAVASCRIPT</span>
+                    <div class="skill-bar">
+                        <div style="width: 65%"></div>
+                    </div>
+                </div>
+
+                
+                <div class="skill">
+                    <span>LINUX</span>
+                    <div class="skill-bar">
+                        <div style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>NETWORKING</span>
+                    <div class="skill-bar">
+                        <div style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>WEB SECURITY</span>
+                    <div class="skill-bar">
+                        <div style="width: 55%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOOLKIT -->
+
+        <div class="module-content" id="toolsContent">
+
+            <div class="content-label">// SECURITY TOOLKIT</div>
+
+            <h2>TOOLS</h2>
+
+            <div class="tool-grid">
+
+                <div class="tool">
+                    <strong>NMAP</strong>
+                    <span>NETWORK SCANNING</span>
+                </div>
+
+                <div class="tool">
+                    <strong>BURP SUITE</strong>
+                    <span>WEB SECURITY</span>
+                </div>
+
+                <div class="tool">
+                    <strong>WIRESHARK</strong>
+                    <span>PACKET ANALYSIS</span>
+                </div>
+
+                <div class="tool">
+                    <strong>GIT</strong>
+                    <span>VERSION CONTROL</span>
+                </div>
+
+                <div class="tool">
+                    <strong>LINUX</strong>
+                    <span>OPERATING SYSTEM</span>
+                </div>
+
+                <div class="tool">
+                    <strong>PYTHON</strong>
+                    <span>AUTOMATION</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTF -->
+
+        <div class="module-content" id="ctfContent">
+
+            <div class="content-label">// CHALLENGE DATABASE</div>
+
+            <h2>CTF & CHALLENGES</h2>
+
+            <p class="content-description">
+                Capture-the-flag challenges, security exercises
+                and technical writeups.
+            </p>
+
+            <div class="challenge">
+
+                <span>CHALLENGE-001</span>
+
+                <h3>WEB ENUMERATION</h3>
+
+                <p>
+                    Difficulty: ★★☆☆☆
+                </p>
+
+                <span class="completed">
+                    SOLVED ✓
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <div class="module-content" id="aboutContent">
+
+            <div class="content-label">// IDENTITY</div>
+
+            <h2>ABOUT ME</h2>
+
+            <div class="about-box">
+
+                <p>
+                    I'm Tusar Khatri, a cybersecurity student
+                    interested in web security, networking,
+                    Python and security research.
+                </p>
+
+                <p>
+                    I'm focused on learning cybersecurity through
+                    hands-on projects, experiments and practical
+                    problem solving.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="module-content" id="contactContent">
+
+            <div class="content-label">// COMMUNICATION CHANNEL</div>
+
+            <h2>CONTACT</h2>
+
+            <div class="contact-box">
+
+                <p>Want to collaborate or discuss a project?</p>
+
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tusharkhatri888@gmail.com" target="_blank">
+    tusharkhatri888@gmail.com
+</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <footer>
+        <span>tusar // SECURITY LAB</span>
+        <span>BUILD_01.2026</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
